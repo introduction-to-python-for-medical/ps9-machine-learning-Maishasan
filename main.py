@@ -3,7 +3,7 @@ import pandas as pd
 df = pd.read_csv('parkinsons.csv')
 df.head()
 
-features = ['MDVP:Flo(Hz)', 'NHR']
+features = ['MDVP:Fo(Hz)', 'MDVP:Jitter(%)']
 target = ['status']
 x=df[features]
 y=df[target]
